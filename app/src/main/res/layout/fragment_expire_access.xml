@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpireAccessFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/expiredAccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="#FFB300">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Expired Access"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/renewButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="3"
+                android:text="Renew" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:layout_below="@+id/expireAccess"
+            android:id="@+id/expireAccess_recyclerview"
+            tools:ignore="UnknownIdInLayout" />
+
+        <LinearLayout
+            android:id="@+id/afterRenewSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60sp"
+            android:layout_marginStart="60sp"
+            android:layout_marginTop="20sp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_alignTop="@+id/expireAccess_recyclerview"
+            android:background="#D81B60"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/inputId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter UID"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/startRenew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#64DD17"
+                android:text="Renew"
+                android:textSize="15sp"
+                android:layout_marginBottom="5sp"
+                app:backgroundTint="#64DD17" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

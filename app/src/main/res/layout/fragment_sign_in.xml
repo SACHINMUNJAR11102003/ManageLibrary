@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignInFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20sp"
+        android:id="@+id/linearlayout"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:id="@+id/name_signup"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter E-Mail"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/email_signUp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/address_signup"
+            android:hint="Enter Address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set Password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/setPassword_signUp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/ConfirmPassword_signUP"/>
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBar_signup"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="30sp"
+            app:backgroundTint="#F4511E" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

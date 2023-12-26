@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveAccessFragment">
+
+   <LinearLayout
+       android:id="@+id/expiredAccess"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10sp"
+       android:layout_marginBottom="10sp"
+       android:background="#FFB300">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:text="Live Access"
+       android:gravity="center"
+       android:textColor="@color/white"
+       android:textSize="30sp"
+       android:textStyle="italic|bold" />
+
+   </LinearLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="60sp"
+       android:id="@+id/recyclerView_liveAccess"/>
+
+</FrameLayout>

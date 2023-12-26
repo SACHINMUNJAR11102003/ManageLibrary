@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMember">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/textViewLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:gravity="center"
+            android:background="#FFD600"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="ADD NEW MEMBER"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/basicInformationLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLinearLayout"
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/addMember_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/white"
+                android:hint="Enter Name"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/addMember_ChooseSlot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="Choose Slot"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/addMember_MobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="Enter Mobile Number"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/addMember_aadharNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="Aadhar Card Number"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#D50000"
+                android:text="ADD Member"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:backgroundTint="#D50000" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

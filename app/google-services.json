@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "850983859116",
+    "project_id": "managelib-ff40d",
+    "storage_bucket": "managelib-ff40d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850983859116:android:073fcbdba10c96db9b0009",
+        "android_client_info": {
+          "package_name": "com.example.managelib"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx_EiKAqVKEuQo8lGcF284qIKxcan2l54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
